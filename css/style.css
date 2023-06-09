@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+     /* border: 5px solid red;  */
+}
+
+.blogs{
+    width: 80%;
+    margin: 0px auto;
+     /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+.heading h1{
+    font-size: 40px;
+    /* color:rgb(109, 158, 60) */
+}
+
+.heading h4{
+    color: #777;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-gap: 8px;
+
+}
+.cards .card{
+    height: 400px;
+    width: 350px;
+    margin: 30px 15px;
+     /* border: 2px solid green;  */
+}
+
+.card img{
+    width: inherit;
+    height: 200px;
+}
+
+.card .tagline{
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+    margin: 5px 10px;
+}
+
+.tagline span{
+    color: #777;
+}
+
+.title{
+    color: blue;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+.card .content{
+    margin: 5px 10px;
+    font-size: 15px;
+    color: #363333;
+    line-height: 1.4;
+}
+
+.card a{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 15px 10px;
+    background-color: blue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.card a:hover{
+    background-color: blue;
+}
+
+@media(max-width:1252px){
+    .cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media(max-width:1070px){
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:742px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+}
+}
